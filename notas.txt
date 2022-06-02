@@ -1,0 +1,96 @@
+Resumen:
+
+persona
+- int DNI
+- string Nombres
+- string mail
+- boolean alta
+- Cuenta cuenta
+
+Puesto
+- string nombre 
+
+actividad
+- string nombre 
+
+profesional
+- string titulo
+- Actividad actividad
+- tiempo de servicio?
+
+Administrativos
+- Puesto puesto
+
+Cuenta
+- int Numero
+- float saldo
+
+* ingreso
+* egreso
+
+Tipo
+- string nombre 
+
+Tarjeta de Credito
+- Profesional profesional
+- int numero
+- float limite_de_compra
+- Tipo tipo (Segun ingresos)
+
+
+Tiene que compilar 
+Tiene que ejecutar y funcionar según las consignas
+
+- poo 
+- herencia y polimorfismo
+- template -
+- Control error
+- punteros -
+- composición
+
+
+
+
+Tema 3: Sistema de Gestión
+Se pide desarrollar una aplicación en C++ que permita implementar la simulación de un Sistema de
+Gestión.
+Consignas:
+• Un banco presta el servicio de pago de haberes a los empleados de distintas empresas. Cada
+persona se identifica por el tipo actividad que realiza, con el objetivo de poder ofrecer
+diferentes tipos de servicios. En principio se clasifican en dos grandes grupos bien definidos:
+Profesionales y Administrativos.
+• Los datos necesarios para registrar a cada persona son DNI, Nombres, mail.
+• Para el caso de Administrativos, se debe registrar el puesto en el que se desempeña.
+• Profesionales, deben registrar su título y actividad que desarrollan y tiempo de servicio.
+• A cada persona que ingresa al sistema, se le abre una cuenta sueldo. Los datos son Numero
+de Cuenta, Saldo.
+• Los profesionales tienen, además de la cuenta sueldo, un paquete de tarjetas de crédito con
+los siguientes datos: Número de Tarjeta, Límite de Compra.
+
+El programa debe permitir:
+• Mantener la lista de Clientes. Alta y Baja (En este caso considerar cambiar el estado de
+ALTA a BAJA)
+• Crear cuenta sueldo para cada cliente ingresado. Cada cuenta mantiene el saldo en función
+de los movimientos que se produzcan en la cuenta (Ingresos - Egresos)
+• Otorgar Tarjeta de Crédito para cada profesional ingresado al sistema. Se pueden otorgar 3
+tipos de tarjetas: Bronce, Plata, Oro. El tipo de tarjeta se otorga en función de los ingresos
+declarados (Sueldo)
+
+Criterios de corrección para todos los temas
+El desarrollo debe ser desarrollado completamente completamente orientado a objetos.
+El programa debe ejecutar y cumplir con las consignas definidas en los enunciados de los temas.
+Se deben desarrollar todas las funciones correspondientes para cada clase necesaria para la
+implemen
+
+
+Gestion
+
+- Crear profesional (con su tarjeta)
+- Crear Administrativo
+
+- Dar de alta/baja
+
+- Ingreso
+- Egreso (s?)
+
+- Listar Personas
