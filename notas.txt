@@ -94,3 +94,28 @@ Gestion
 - Egreso (s?)
 
 - Listar Personas
+
+string titulo;
+    Actividad actividad;
+    time_t fecha_inicio;
+
+Profesional::
+Profesional(
+
+std::__cxx11::basic_string<char, std::char_traits<char>,std::allocator<char> >,
+
+ int, 
+
+ std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, 
+
+ std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, 
+
+ std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, 
+
+ std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)'
+  administrativos.push_back(Administrativo("Admin1", 44000111, "admin1@gmail.com", "puesto"));
+    administrativos.push_back(Administrativo("Admin2", 44000112, "admin2@gmail.com", "puesto"));
+    administrativos.push_back(Administrativo("Admin3", 44000113, "admin3@gmail.com", "puesto"));
+    profesionales.push_back(Profesional("pro1", 44111000, "pro1@gmail.com", "Ingeniero", "Gestion", "05/06/2017"));
+    profesionales.push_back(Profesional("pro2", 44111001, "pro2@gmail.com", "Ingeniero", "Gestion", "05/06/2017"));
+    profesionales.push_back(Profesional("pro3", 44111002, "pro3@gmail.com", "Ingeniero", "Gestion", "05/06/2017"));

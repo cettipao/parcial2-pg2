@@ -1,27 +1,32 @@
+#ifndef _PROFESIONAL_
+#define _PROFESIONAL_
+
+
 #include "persona.h"
-#include "actividad.h"
+//#include "actividad.h"
 #include <ctime>   
 #include <iostream>
 using namespace std;
 
-class Profesional: virtual Persona
+class Profesional: public Persona
 {
 private:
     string titulo;
-    Actividad actividad;
-    time_t fecha_inicio;
+    string actividad;
+    string fecha_inicio;
 
 public:
-    Profesional(/* args */);
+    Profesional(string, int, string, string, string, string);
     ~Profesional();
 
     string getTitulo();
     void setTitulo(string);
 
-    Actividad getActividad();
-    void setActividad(Actividad);
+    string getActividad();
+    void setActividad(string);
 
-    time_t getFechaInicio();
-    void setFechaInicio(time_t);
+    string getFechaInicio();
+    void setFechaInicio(string);
 };
 
+#endif

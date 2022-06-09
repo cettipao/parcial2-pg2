@@ -1,17 +1,22 @@
 #include "administrativo.h"
 
-Administrativo::Administrativo(/* args */)
+Administrativo::Administrativo(string n, int d, string m, string p)
 {
+    nombre = n;
+    dni = d;
+    mail = m;
+    puesto = p;
+    alta = 1;
 }
 
 Administrativo::~Administrativo()
 {
 }
 
-Puesto Administrativo::getPuesto(){
+string Administrativo::getPuesto(){
     return puesto;
 }
 
-void Administrativo::setPuesto(Puesto p){
+void Administrativo::setPuesto(string p){
     puesto = p;
 }

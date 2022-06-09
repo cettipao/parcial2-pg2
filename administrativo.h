@@ -1,18 +1,21 @@
+#ifndef _ADMINISTRATIVO_
+#define _ADMINISTRATIVO_
+
 #include "persona.h"
 #include "puesto.h"
 #include <iostream>
 using namespace std;
 
-class Administrativo: virtual Persona
+class Administrativo: public Persona
 {
 private:
-    Puesto puesto;
+    string puesto;
 public:
-    Administrativo(/* args */);
+    Administrativo(string, int, string, string);
     ~Administrativo();
 
-    Puesto getPuesto();
-    void setPuesto(Puesto);
+    string getPuesto();
+    void setPuesto(string);
 };
 
-
+#endif

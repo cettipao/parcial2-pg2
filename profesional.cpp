@@ -1,7 +1,14 @@
 #include "profesional.h"
 
-Profesional::Profesional(/* args */)
+Profesional::Profesional(string n, int d, string m, string t, string a, string f)
 {
+    nombre = n;
+    dni = d;
+    mail = m;
+    titulo = t;
+    actividad = a;
+    fecha_inicio = f;
+    alta = 1;
 }
 
 Profesional::~Profesional()
@@ -18,22 +25,22 @@ void Profesional::setTitulo(string titulo)
     titulo = titulo;
 }
 
-Actividad Profesional::getActividad()
+string Profesional::getActividad()
 {
     return actividad;
 }
 
-void Profesional::setActividad(Actividad actividad)
+void Profesional::setActividad(string actividad)
 {
     actividad = actividad;
 }
 
-time_t Profesional::getFechaInicio()
+string Profesional::getFechaInicio()
 {
     return fecha_inicio;
 }
 
-void Profesional::setFechaInicio(time_t fecha_inicio)
+void Profesional::setFechaInicio(string fecha_inicio)
 {
     fecha_inicio = fecha_inicio;
 }
