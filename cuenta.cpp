@@ -1,6 +1,16 @@
 #include "cuenta.h"
 
-Cuenta::Cuenta(/* args */)
+#ifndef _CUENTACPP_
+#define _CUENTACPP_
+
+Cuenta::Cuenta(Persona p, float su, float sa)
+{
+    persona = p;
+    sueldo = su;
+    saldo = sa;
+}
+
+Cuenta::Cuenta()
 {
 }
 
@@ -8,13 +18,6 @@ Cuenta::~Cuenta()
 {
 }
 
-int Cuenta::getNumero(){
-    return numero;
-}
-
-void Cuenta::setNumero(int n){
-    numero = n;
-}
 
 float Cuenta::getSueldo(){
     return sueldo;
@@ -23,3 +26,29 @@ float Cuenta::getSueldo(){
 void Cuenta::setSueldo(float s){
     sueldo = s;
 }
+
+float Cuenta::getSaldo(){
+    return saldo;
+}
+
+void Cuenta::setSaldo(float s){
+    saldo = s;
+}
+
+Persona Cuenta::getPersona(){
+    return persona;
+}
+
+void Cuenta::setPersona(Persona p){
+    persona = p;
+}
+
+void Cuenta::ingreso(float c){
+    saldo += c;
+}
+
+void Cuenta::egreso(float c){
+    saldo -= c;
+}
+
+#endif

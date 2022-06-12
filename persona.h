@@ -1,22 +1,21 @@
 #ifndef _PERSONA_
 #define _PERSONA_
 
-
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 class Persona
 {
 protected:
-    int dni;
+    string dni;
     string nombre;
     string mail;
     bool alta;
 
 public:
 
-    int getDni();
-    void setDni(int);
+    string getDni();
+    void setDni(string);
 
     string getNombre();
     void setNombre(string);
@@ -26,6 +25,10 @@ public:
 
     bool getAlta();
     void setAlta(bool);
+
+    bool operator==(Persona);
+
+    virtual string listar_atributos_principales(){return "";};
 };
 
 #endif

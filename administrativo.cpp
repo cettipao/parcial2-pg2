@@ -1,6 +1,6 @@
 #include "administrativo.h"
 
-Administrativo::Administrativo(string n, int d, string m, string p)
+Administrativo::Administrativo(string n, string d, string m, string p)
 {
     nombre = n;
     dni = d;
@@ -19,4 +19,8 @@ string Administrativo::getPuesto(){
 
 void Administrativo::setPuesto(string p){
     puesto = p;
+}
+
+string Administrativo::listar_atributos_principales(){
+    return nombre + " (" + dni + ")" + "[Administrativo]";
 }

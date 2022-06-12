@@ -1,6 +1,6 @@
 #include "profesional.h"
 
-Profesional::Profesional(string n, int d, string m, string t, string a, string f)
+Profesional::Profesional(string n, string d, string m, string t, string a, string f)
 {
     nombre = n;
     dni = d;
@@ -43,4 +43,8 @@ string Profesional::getFechaInicio()
 void Profesional::setFechaInicio(string fecha_inicio)
 {
     fecha_inicio = fecha_inicio;
+}
+
+string Profesional::listar_atributos_principales(){
+    return nombre + " (" + dni + ")" + "[Profesional]";
 }

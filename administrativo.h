@@ -11,11 +11,13 @@ class Administrativo: public Persona
 private:
     string puesto;
 public:
-    Administrativo(string, int, string, string);
+    Administrativo(string, string, string, string);
     ~Administrativo();
 
     string getPuesto();
     void setPuesto(string);
+
+    string listar_atributos_principales();
 };
 
 #endif

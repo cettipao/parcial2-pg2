@@ -1,28 +1,34 @@
-#include "profesional.h"
-#include "tipo.h"
+#include "cuenta.h"
+#include "cuenta.cpp"
 
+#ifndef _TARJETA_
+#define _TARJETA_
 class Tarjeta
 {
 private:
-    Profesional profesional;
-    int numero;
+    Cuenta cuenta;
+    string numero_tarjeta;
     float limite_de_compra;
-    Tipo tipo;
+    float compras_del_mes;
+    string tipo;
 
 public:
-    Tarjeta(/* args */);
+    Tarjeta(Cuenta);
     ~Tarjeta();
 
-    Profesional getProfesional();
-    void setProfesional(Profesional);
+    Cuenta getCuenta();
+    void setCuenta(Cuenta);
 
-    int getNumero();
-    void setNumero(int);
+    string getNumeroTarjeta();
+    void setNumeroTarjeta(string);
 
     float getLimiteDeCompra();
     void setLimiteDeCompra(float);
 
-    Tipo getTipo();
-    void setTipo(Tipo);
+    float getComprasDelMes();
+    void setComprasDelMes(float);
+
+    bool compra(float);
 
 };
+#endif

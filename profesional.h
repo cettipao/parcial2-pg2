@@ -16,7 +16,7 @@ private:
     string fecha_inicio;
 
 public:
-    Profesional(string, int, string, string, string, string);
+    Profesional(string, string, string, string, string, string);
     ~Profesional();
 
     string getTitulo();
@@ -27,6 +27,8 @@ public:
 
     string getFechaInicio();
     void setFechaInicio(string);
+
+    string listar_atributos_principales();
 };
 
 #endif
