@@ -1,5 +1,5 @@
 #include <iostream>
-#include "gestion.h"
+#include "gestion.cpp"
 using namespace std;
 
 int main(int argc, char const *argv[])
